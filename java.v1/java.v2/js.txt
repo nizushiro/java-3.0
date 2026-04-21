@@ -1,0 +1,189 @@
+// Zad 1
+document.querySelector('.title').textContent = 'DOM Training Arena';
+
+// Zad 2
+document.querySelector('.nav-item a').textContent = 'Start';
+
+// Zad 3
+const items = document.querySelectorAll('.menu-list li');
+items.forEach(function (item) {
+  console.log(item.textContent);
+});
+
+// Zad 4
+const card = document.querySelector('.card.highlight');
+card.classList.add('active');
+
+// Zad 5
+const cardHeader = document.querySelector('.card .card-header');
+cardHeader.textContent = 'Zmieniona karta';
+
+// Zad 6
+const infoText = document.querySelector('details .info-text');
+infoText.textContent = 'Zmieniony tekst';
+
+// Zad 7
+const inputName = document.querySelector('input[name="name"]');
+inputName.value = 'Jan';
+
+// Zad 8
+const select = document.querySelector('select.select');
+select.value = 'de';
+
+// Zad 9
+const checkbox = document.querySelector('.checkbox');
+checkbox.checked = true;
+
+// Zad 10
+const deepText = document.querySelector('.deep-text');
+deepText.classList.add('highlight');
+
+// Zad 11
+const menuList = document.querySelector('.menu-list');
+newLi.textContent = 'Nowy Element';
+const dynamicList = document.querySelector('#dynamic-list');
+(dynamicList, appendChild(newLi));
+
+// Zad 12
+
+// Zad 13
+const newCard = document.createElement('div');
+newCard.classList.add('card');
+
+const cardSection = document.querySelector('.card-section');
+cardSection.appendChild('newCard');
+
+// Zad 14
+const container = document.querySelector('.boxes-container');
+
+const newBox = document.createElement('div');
+newBox.classList.add('box');
+newBox.textContent = 'Nowy box';
+
+container.appendChild(newBox);
+
+// Zad 15
+const area = document.querySelector('.dynamic-area');
+
+const p = document.createElement('p');
+p.textContent = 'ghghhghgh';
+
+area.appendChild(p);
+
+// Zad 16
+const newBox = document.createElement('div');
+newBox.classList.add('box');
+const insertionContainer = document.querySelector('#insertion-container');
+insertionContainer.insertBefore(newBox, insertionContainer.firstElementChild);
+
+// Zad 17
+const list = document.querySelector('#dynamic-list');
+
+const li = document.createElement('li');
+li.textContent = 'Nowy pierwszy element';
+
+list.insertBefore(li, list.firstChild);
+
+// Zad 18
+document.querySelectorAll('.card-header').forEach(header => {
+    const span = document.createElement('span');
+    span.textContent = 'Nowy span';
+    header.appendChild(span);
+});
+
+// Zad 19
+const details = document.querySelector('details');
+
+const p = document.createElement('p');
+p.textContent = 'nowyyyyy element';
+
+details.appendChild(p);
+
+// Zad 20
+const playground = document.querySelector('.playground');
+
+const btn = document.createElement('button');
+btn.textContent = 'playground';
+
+playground.appendChild(btn);
+
+// Zad 21
+const removableItems = document.querySelectorAll('.removable');
+
+removableItems.forEach(function(item) {
+  item.remove();
+});
+
+// Zad 22
+const list = document.querySelector('#dynamic-list');
+
+if (list.lastElementChild) {
+    list.lastElementChild.remove();
+}
+
+// Zad 23
+const card = document.querySelector('.card[data-id="1"]');
+
+if (card) {
+    card.remove();
+}
+
+// Zad 24
+const container = document.querySelector('#insertion-container');
+
+container.querySelectorAll('.box').forEach(box => box.remove());
+
+// Zad 25
+const details = document.querySelector('details');
+
+if (details) {
+    details.remove();
+}
+
+// Zad 26
+const inputs = document.querySelectorAll('form input');
+
+inputs.forEach(input => {
+    console.log(input.name);
+});
+
+// Zad 27
+const emailinput = document.querySelector('[name="email"]');
+emailinput.setAttribute('name', 'user-email');
+
+// Zad 28
+const card = document.querySelector('.card.highlight');
+card.setAttribute('data-test', '123');
+
+// Zad 29
+const wiyyy = document.querySelectorAll (".menu-list li")
+wiyyy.textContent = 'Zmieniono'
+
+// Zad 30
+const zizui = document.querySelectorAll (".card")
+zizui.classList.add('processed')
+zizui.dataset.status = ("done")
+
+// Zad 31 
+const lolok = document.querySelector("#add-item-btn")
+lolok.addEventListener("click", () => {
+  const input = document.querySelector('#item-input')
+  const list = document.querySelector('#dunamic-list')
+  const li = document.createElement("li");
+  li.textContent = input.value;
+  list.element.appendChild(li)
+  input.value = ""
+});
+
+// Zad 32
+
+
+// Zad 33
+const jakazm = querySelector("#insert-before-btn")
+const jakazm = addEventListener("click", () => {
+  const box = document.createElement(".box")
+  #insertion-container.appendChild(box)
+})
+
+
+

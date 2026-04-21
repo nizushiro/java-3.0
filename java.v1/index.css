@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+  }
+  
+  header {
+    background: #333;
+    color: white;
+    padding: 20px;
+  }
+  
+  .nav-list {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .nav-item a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .container {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background: #ddd;
+    padding: 15px;
+  }
+  
+  .content {
+    flex: 1;
+    background: white;
+    padding: 20px;
+  }
+  
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 15px;
+  }
+  
+  .card.highlight {
+    border-color: red;
+  }
+  
+  .card-header {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .card-body ul li span {
+    color: blue;
+  }
+  
+  .dynamic-area {
+    border: 2px dashed #999;
+    padding: 15px;
+    margin-top: 20px;
+  }
+  
+  .removable {
+    background: #ffe0e0;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .box {
+    padding: 10px;
+    background: #cce5ff;
+    margin: 5px 0;
+  }
+  
+  #main-footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  .user-data{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  .user-data label, .user-data > label > input{
+    width: 100%;
+  }
+  button{
+    padding: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  /* Dodaj styl CSS dla strony */
