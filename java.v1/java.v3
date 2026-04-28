@@ -1,235 +1,183 @@
-Zad1
-const heder = document.getElementById("header")
 
+// Zad 1
+const naglowek = document.querySelector("#main-header");
 
-Zad2
-const nav = document.querySelectorAll("nav ul li")
+// Zad 2
+const liNawigacji = document.querySelectorAll("nav .nav-list li");
 
+// Zad 3
+const btnUsun = document.querySelector(".delete-trigger");
 
-Zad3
-const pierwszy = document.querySelector("button")
+// Zad 4
+const sekcje = document.querySelectorAll("#content-area section");
 
+// Zad 5
+const sekret = document.querySelector("[data-secret]");
 
-Zad4
-const sekcje = document.querySelectorAll('#content-area section')
+// Zad 6
+const linkStart = document.querySelector('[data-link="home"]');
 
+// Zad 7
+const btn = document.querySelector("#trigger-btn");
+const poziom1 = btn.closest(".level-1");
 
-Zad5
-const atrybut = document.querySelectorAll('*[data-secret]')
+// Zad 8
+const wiersze = document.querySelectorAll("#user-table tbody tr");
 
+// Zad 9
+const podpis = document.querySelector("#main-image").nextElementSibling;
 
-Zad6
-const pobierz = document.querySelector('a[data-link]')
+// Zad 10
+const checkboxy = document.querySelectorAll('input[name="tags"]');
 
-const href = link.href
+// Zad 11
+const rodzicUser = document.querySelector("#username").parentElement;
 
+// Zad 12
+const dzieciPow = document.querySelector(".notification-wrapper").children;
 
-Zad7
-const przycisk = document.querySelector('#trigger-btn .level-1')
+// Zad 13
+const tekstH1 = document.querySelector("h1").textContent;
 
+// Zad 14
+const ostatniePow = document.querySelector("#notification-list li:last-child");
 
-Zad8
-const elementytabel = document.querySelectorAll("<tr> <tbody>")
+// Zad 15
+const poziom2 = document.querySelectorAll(".nest.level-2");
 
+// Zad 16
+const nowyLink = document.createElement("li");
+nowyLink.textContent = "Nowy link";
+document.querySelector(".nav-list").appendChild(nowyLink);
 
-Zad9
-const elementfig = document.querySelectorAll("figcaption #main-image=rodzeństwo")
+// Zad 17
+const btnLog = document.createElement("button");
+btnLog.textContent = "Logowanie";
+document.querySelector("#main-header nav").after(btnLog);
 
-
-Zad10
-const checkboxy = document.querySelectorAll("input[type=checkbox]")
-
-
-Zad11
-let username = document.querySelector('#username');
-let id = username.parentNode.id;
-
-console.log(id);
-
-
-Zad12
-const children = document.querySelector('.notification-wrapper').children;
-
-
-ZD13
-const naglowek = document.querySelector('h1');
-const tekst = naglowek.textContent;
-
-
-ZD14
-const bob = document.querySelector('#notification-list li:last-child');
-
-
-ZD15
-const lolp = document.querySelectorAll('.nest.level-2');
-
-
-ZD16
-const naox = document.getElementById('main-nav');
-const neox = document.createElement('li');
-nnaox.textContent = 'Kontakt'; 
-neox.appendChild(newItem);
-
-
-ZD17
-const buttox = document.createElement("button");
-buttox.textContent = "logowanie"
-buttox.classList.add("login-btn");
-const hna = document.querySelector("header nav");
-hna.insertAdjacentElement("afterend", buttox)
-ZD18 (HTML!!!!)
-<table id="mojaTabela" border="1">
-    <thead>
-        <tr>
-            <th>ID</th>
-            <th>Imię</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>101</td>
-            <td>Anna</td>
-        </tr>
-    </tbody>
-</table>
-
-<br>
-<button onclick="dodajWiersz()">Dodaj Piotra</button>
-
-<script>
-    function dodajWiersz() {
-        // 1. Pobierz tabelę
-        var table = document.getElementById("mojaTabela").getElementsByTagName('tbody')[0];
-        
-        // 2. Dodaj nowy wiersz na końcu (-1)
-        var newRow = table.insertRow(-1);
-        
-        // 3. Dodaj komórki (komórka 1: ID, komórka 2: Imię)
-        var cell1 = newRow.insertCell(0);
-        var cell2 = newRow.insertCell(1);
-        
-        // 4. Wstaw dane do komórek
-        cell1.innerHTML = "103";
-        cell2.innerHTML = "Piotr";
-    }
-</script>
-
-
-ZD19
-const se = document.querySelector('#forms-demo');
-const wP = document.createElement('p');
-se.prepend(warningParagraph);
-
-
-ZD20
-const skillList = document.getElementById('skill-list');
-const li1 = document.createElement('li');
-li1.textContent = 'JS';
-const li2 = document.createElement('li');
-li2.textContent = 'HTML';
-const li3 = document.createElement('li');
-li3.textContent = 'CSS';
-skillList.appendChild(li1);
-skillList.appendChild(li2);
-skillList.appendChild(li3);
-
-
-ZD21
-const nax = document.querySelector('.alert-danger');
-const nox = originalNotification.cloneNode(true);
-pox.id = 'new-error-id';
-const polux = document.querySelector('.notifications-list');
-polux.appendChild(clonedNotification);
-
-
-ZD22 (HTML!!!!!!!!!!!)
-<!-- HTML -->
-<label id="username-label">Nazwa użytkownika</label>
-
-<script>
-  // 1. Znajdź etykietę (label)
-  const label = document.getElementById('username-label');
-
-  // 2. Utwórz nowy element span
-  const span = document.createElement('span');
-
-  // 3. Dodaj tekst do span
-  span.textContent = ' (Wymagane)';
-  
-  // Opcjonalnie: dodaj styl, np. kolor czerwony
-  span.style.color = 'red';
-
-  // 4. Dołącz span do etykiety
-  label.appendChild(span);
-</script>
-
-
-ZD23
-const tra = document.querySelector('#content-area');
-const sectio = contentArea.querySelectorAll('section');
-for (let i = 1; i < sectio.length; i++) {
-    const hr = document.createElement('hr');
-    sectio[i].parentNode.insertBefore(hr, sections[i]);
-}
-
-
-ZD24
-const fo = document.getElementById('main-footer');
-fo.innerHTML += ' | <a href="/polityka-prywatnosci.html">Polityka Prywatności</a>';
-ZD25
-
-
-const ngl = document.getElementById('tytul');
-const ikona = '❤️';
-ngl.prepend(ikona);
-
-
-ZD26
-const jk = document.getElementById('roleSelect');
-const jii = document.createElement('option');
-jii.value = 'administrator';
-jii.text = 'Administrator';
-jk.appendChild(jii);
-
-
-ZD27
-const styleElement = document.createElement('style');
-styleElement.innerHTML = `
-  body {
-    background-color: lightgray;
-  }
+// Zad 18
+const tbody = document.querySelector("#user-table tbody");
+const wiersz103 = document.createElement("tr");
+wiersz103.innerHTML = `
+  <td>103</td>
+  <td>Piotr</td>
+  <td><span class="badge">Aktywny</span></td>
+  <td><button class="delete-row">Usuń</button></td>
 `;
-document.head.appendChild(styleElement);
+tbody.appendChild(wiersz103);
+
+// Zad 19
+const ostrz = document.createElement("p");
+ostrz.textContent = "⚠️ Uwaga! Formularz wymaga poprawnego wypełnienia.";
+document.querySelector("#forms-demo").prepend(ostrz);
+
+// Zad 20
+const lista = document.querySelector("#skill-list");
+["HTML", "CSS", "JS"].forEach(s => {
+  const li = document.createElement("li");
+  li.textContent = s;
+  lista.appendChild(li);
+});
+
+// Zad 21
+//🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫
+
+// Zad 22
+document.querySelector('label[for="username"]').innerHTML += ' <span>(Wymagane)</span>';
+
+// Zad 23
 
 
-ZD28
-const frm = document.getElementById('myForm');
-const cB = document.createElement('button');
-cB.textContent = 'Anuluj';
-cB.type = 'button';
-frm.appendChild(cB);
+// Zad 24
+document.querySelector("footer").innerHTML += '<p><a href="#">Polityka prywatności</a></p>';
 
+// Zad 25
+const h1 = document.querySelector("h1");
+h1.innerHTML = "🚀 " + h1.innerHTML;
 
-ZD29
-const tb = document.querySelector('table');
-const aDi = document.createElement('div');
-aDi.className = 'alert-box';
-aDi.innerText = 'To jest komunikat ostrzegawczy!';
-tb.parentElement.insertBefore(alertDiv, table);
+// Zad 26
+const opcja = document.createElement("option");
+opcja.value = "admin";
+opcja.textContent = "Administrator";
+document.querySelector("#role-select").appendChild(opcja);
 
+// Zad 27
+const styl = document.createElement("style");
+styl.textContent = "body { background: #7d7d7d }";
+document.head.appendChild(styl);
 
-ZD30
-const sek = document.querySelector('.trawersowanie');
-sek.innerHTML = sekcja.innerHTML.replace(/szmaragd/g, '<mark>szmaragd</mark>');
-ZD31
+// Zad 28
+const btnAnuluj = document.createElement("button");
+btnAnuluj.textContent = "Anuluj";
+btnAnuluj.type = "button";
+document.querySelector("#complex-form").appendChild(btnAnuluj);
 
+// Zad 29
+const alert = document.createElement("div");
+alert.className = "alert-box";
+alert.textContent = "Uwaga! Dane użytkowników.";
+document.querySelector("#data-demo").prepend(alert);
 
-const nag = document.querySelector('h1');
-nag.textColor = "red"
-ZD32
+// Zad 30
+sekret.innerHTML = sekret.innerHTML.replace("szmaragd", "<mark>szmaragd</mark>");
 
+// Zad 31
+document.querySelector("h1").style.color = "navy";
 
-const aE = document.querySelector('.admin-only');
-if (aE) {
-    aE.style.display = 'block';
-}
+// Zad 32
+document.querySelector(".admin-only").style.display = "block";
+
+// Zad 33
+//🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫
+
+// Zad 34
+document.querySelectorAll(".notification-item")
+  .forEach(p => p.classList.add("highlight"));
+
+// Zad 35
+document.querySelector("#username").placeholder = "Podaj imię...";
+
+// Zad 36
+//🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫
+
+// Zad 37
+//🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫
+
+// Zad 38
+document.querySelector("#username").disabled = true;
+
+// Zad 39
+document.querySelector("figcaption").textContent = "Nowy opis obrazka";
+
+// Zad 40
+document.querySelector("#user-table").style.border = "2px solid black";
+
+// Zad 41
+document.querySelector(".level-3").classList.remove("nest");
+
+// Zad 42
+document.querySelector(".notification-item.success").style.background = "lightgreen";
+
+// Zad 43
+//🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫
+
+// Zad 44
+document.querySelector("#role-select").value = "moderator";
+
+// Zad 45
+document.querySelector("#trigger-btn").classList.contains("active");
+
+// Zad 46
+document.querySelector("#notification-list li").remove();
+
+// Zad 47
+//🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫
+
+// Zad 48
+//🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫
+
+// Zad 49
+//🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫
+
+// Zad 50
+document.querySelector("footer").remove();
